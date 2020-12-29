@@ -19,10 +19,8 @@ class Solution{
           Node * tail = head;
           if ( !head ) { return newNode; }
           
-          // Locate tail node
           for (;tail->next; tail = tail->next);
 
-          // Insert at end of list
           tail->next = newNode;
           
           return head;
@@ -32,7 +30,7 @@ class Solution{
           Node *start=head;
           while(start)
           {
-              cout<<start->data<<" ";
+              cout << start->data<<" ";
               start=start->next;
           }
       }
