@@ -6,20 +6,10 @@ int main()
     int N;
     cin >> N;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    if(N%2==!0)
-    {
-    	cout << "Wierd" << endl;
-	}
-	
-	else if (6 <= N <= 20 || N%2==0)
-	{
-		cout << "Wierd" << endl;
-	}
-	
-	/*else if (N > 20)
-	{
-		cout << "Not Wierd" << endl;
-	}*/
-
+    if ((n & 1) || (6 <= n && n <= 20))
+        cout << "Weird" << endl;
+    else
+        cout << "Not Weird" << endl;
     return 0;
+
 }
